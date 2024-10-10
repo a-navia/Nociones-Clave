@@ -1,0 +1,16 @@
+# ninja log v6
+30	727	7502597614862216	CMakeFiles/Nociones_Clave.dir/Main.cpp.obj	9e36c06067042aa2
+730	1323	7502597621870156	Nociones_Clave.exe	2909f0808a9766bd
+8	478	7502598528173834	build.ninja	5504c60cdd414a51
+2	420	7502598529042203	CMakeFiles/Nociones_Clave.dir/main.cpp.obj	5b6fe3be8dc24a4f
+420	590	7502598533226939	Nociones_Clave.exe	976b349bb428cfd7
+8	495	7502599005245148	CMakeFiles/Nociones_Clave.dir/main.cpp.obj	5b6fe3be8dc24a4f
+496	661	7502599010115332	Nociones_Clave.exe	976b349bb428cfd7
+7	451	7502599957623828	CMakeFiles/Nociones_Clave.dir/main.cpp.obj	5b6fe3be8dc24a4f
+452	633	7502599962070229	Nociones_Clave.exe	976b349bb428cfd7
+6	420	7502600086040465	CMakeFiles/Nociones_Clave.dir/main.cpp.obj	5b6fe3be8dc24a4f
+420	576	7502600090183983	Nociones_Clave.exe	976b349bb428cfd7
+9	477	7502601619257643	CMakeFiles/Nociones_Clave.dir/main.cpp.obj	5b6fe3be8dc24a4f
+478	657	7502601623947321	Nociones_Clave.exe	976b349bb428cfd7
+7	443	7502601838997066	CMakeFiles/Nociones_Clave.dir/main.cpp.obj	5b6fe3be8dc24a4f
+444	594	7502601843356824	Nociones_Clave.exe	976b349bb428cfd7

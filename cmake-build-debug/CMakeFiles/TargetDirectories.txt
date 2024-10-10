@@ -1,0 +1,3 @@
+C:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/CMakeFiles/Nociones_Clave.dir
+C:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/CMakeFiles/rebuild_cache.dir
