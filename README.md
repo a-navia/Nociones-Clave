@@ -1,4 +1,8 @@
 # Nociones-Clave
+libreris usadas:
+<iostream>
+<fmt/core.h>
+<stdexcept>
 https://campus.uax.es/moodle/mod/assign/view.php?id=1144358
 Enunciado de Ejercicios
 
