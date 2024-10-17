@@ -47,14 +47,55 @@ cmake_ninja_workdir = C$:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-buil
 #############################################
 # Order-only phony target for Nociones_Clave
 
-build cmake_object_order_depends_target_Nociones_Clave: phony || .
+build cmake_object_order_depends_target_Nociones_Clave: phony || cmake_object_order_depends_target_fmt cmake_object_order_depends_target_matematicas
 
-build CMakeFiles/Nociones_Clave.dir/main.cpp.obj: CXX_COMPILER__Nociones_Clave_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/main.cpp || cmake_object_order_depends_target_Nociones_Clave
-  DEP_FILE = CMakeFiles\Nociones_Clave.dir\main.cpp.obj.d
+build CMakeFiles/Nociones_Clave.dir/proyecto/main.cpp.obj: CXX_COMPILER__Nociones_Clave_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/proyecto/main.cpp || cmake_object_order_depends_target_Nociones_Clave
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = CMakeFiles\Nociones_Clave.dir\proyecto\main.cpp.obj.d
   FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
-  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/.
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
   OBJECT_DIR = CMakeFiles\Nociones_Clave.dir
-  OBJECT_FILE_DIR = CMakeFiles\Nociones_Clave.dir
+  OBJECT_FILE_DIR = CMakeFiles\Nociones_Clave.dir\proyecto
+
+build CMakeFiles/Nociones_Clave.dir/proyecto/persona.cpp.obj: CXX_COMPILER__Nociones_Clave_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/proyecto/persona.cpp || cmake_object_order_depends_target_Nociones_Clave
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = CMakeFiles\Nociones_Clave.dir\proyecto\persona.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles\Nociones_Clave.dir
+  OBJECT_FILE_DIR = CMakeFiles\Nociones_Clave.dir\proyecto
+
+build CMakeFiles/Nociones_Clave.dir/proyecto/estudiante.cpp.obj: CXX_COMPILER__Nociones_Clave_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/proyecto/estudiante.cpp || cmake_object_order_depends_target_Nociones_Clave
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = CMakeFiles\Nociones_Clave.dir\proyecto\estudiante.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles\Nociones_Clave.dir
+  OBJECT_FILE_DIR = CMakeFiles\Nociones_Clave.dir\proyecto
+
+build CMakeFiles/Nociones_Clave.dir/proyecto_2/nuevo.cpp.obj: CXX_COMPILER__Nociones_Clave_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/proyecto$ 2/nuevo.cpp || cmake_object_order_depends_target_Nociones_Clave
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = CMakeFiles\Nociones_Clave.dir\proyecto_2\nuevo.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles\Nociones_Clave.dir
+  OBJECT_FILE_DIR = CMakeFiles\Nociones_Clave.dir\proyecto_2
+
+build CMakeFiles/Nociones_Clave.dir/proyecto_2/funciones.cpp.obj: CXX_COMPILER__Nociones_Clave_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/proyecto$ 2/funciones.cpp || cmake_object_order_depends_target_Nociones_Clave
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = CMakeFiles\Nociones_Clave.dir\proyecto_2\funciones.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles\Nociones_Clave.dir
+  OBJECT_FILE_DIR = CMakeFiles\Nociones_Clave.dir\proyecto_2
+
+build CMakeFiles/Nociones_Clave.dir/proyecto_2/matematicas.cpp.obj: CXX_COMPILER__Nociones_Clave_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/proyecto$ 2/matematicas.cpp || cmake_object_order_depends_target_Nociones_Clave
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = CMakeFiles\Nociones_Clave.dir\proyecto_2\matematicas.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles\Nociones_Clave.dir
+  OBJECT_FILE_DIR = CMakeFiles\Nociones_Clave.dir\proyecto_2
 
 
 # =============================================================================
@@ -64,15 +105,47 @@ build CMakeFiles/Nociones_Clave.dir/main.cpp.obj: CXX_COMPILER__Nociones_Clave_u
 #############################################
 # Link the executable Nociones_Clave.exe
 
-build Nociones_Clave.exe: CXX_EXECUTABLE_LINKER__Nociones_Clave_Debug CMakeFiles/Nociones_Clave.dir/main.cpp.obj
+build Nociones_Clave.exe: CXX_EXECUTABLE_LINKER__Nociones_Clave_Debug CMakeFiles/Nociones_Clave.dir/proyecto/main.cpp.obj CMakeFiles/Nociones_Clave.dir/proyecto/persona.cpp.obj CMakeFiles/Nociones_Clave.dir/proyecto/estudiante.cpp.obj CMakeFiles/Nociones_Clave.dir/proyecto_2/nuevo.cpp.obj CMakeFiles/Nociones_Clave.dir/proyecto_2/funciones.cpp.obj CMakeFiles/Nociones_Clave.dir/proyecto_2/matematicas.cpp.obj | _deps/fmt-build/libfmtd.a libmatematicas.a || _deps/fmt-build/libfmtd.a libmatematicas.a
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = _deps/fmt-build/libfmtd.a  libmatematicas.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Nociones_Clave.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
   TARGET_FILE = Nociones_Clave.exe
   TARGET_IMPLIB = libNociones_Clave.dll.a
   TARGET_PDB = Nociones_Clave.exe.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target matematicas
+
+
+#############################################
+# Order-only phony target for matematicas
+
+build cmake_object_order_depends_target_matematicas: phony || .
+
+build CMakeFiles/matematicas.dir/proyecto_2/matematicas.cpp.obj: CXX_COMPILER__matematicas_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/proyecto$ 2/matematicas.cpp || cmake_object_order_depends_target_matematicas
+  DEP_FILE = CMakeFiles\matematicas.dir\proyecto_2\matematicas.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/.
+  OBJECT_DIR = CMakeFiles\matematicas.dir
+  OBJECT_FILE_DIR = CMakeFiles\matematicas.dir\proyecto_2
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target matematicas
+
+
+#############################################
+# Link the static library libmatematicas.a
+
+build libmatematicas.a: CXX_STATIC_LIBRARY_LINKER__matematicas_Debug CMakeFiles/matematicas.dir/proyecto_2/matematicas.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles\matematicas.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = libmatematicas.a
+  TARGET_PDB = matematicas.a.dbg
 
 
 #############################################
@@ -98,9 +171,84 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
+# Write statements declared in CMakeLists.txt:
+# C:/Users/navia/Documents/GitHub/Nociones-Clave/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target fmt
+
+
+#############################################
+# Order-only phony target for fmt
+
+build cmake_object_order_depends_target_fmt: phony || .
+
+build _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.obj: CXX_COMPILER__fmt_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/src/format.cc || cmake_object_order_depends_target_fmt
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = _deps\fmt-build\CMakeFiles\fmt.dir\src\format.cc.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = _deps\fmt-build\CMakeFiles\fmt.dir
+  OBJECT_FILE_DIR = _deps\fmt-build\CMakeFiles\fmt.dir\src
+
+build _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.obj: CXX_COMPILER__fmt_unscanned_Debug C$:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/src/os.cc || cmake_object_order_depends_target_fmt
+  DEFINES = -DFMT_LOCALE
+  DEP_FILE = _deps\fmt-build\CMakeFiles\fmt.dir\src\os.cc.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/navia/Documents/GitHub/Nociones-Clave/. -IC:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = _deps\fmt-build\CMakeFiles\fmt.dir
+  OBJECT_FILE_DIR = _deps\fmt-build\CMakeFiles\fmt.dir\src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target fmt
+
+
+#############################################
+# Link the static library _deps\fmt-build\libfmtd.a
+
+build _deps/fmt-build/libfmtd.a: CXX_STATIC_LIBRARY_LINKER__fmt_Debug _deps/fmt-build/CMakeFiles/fmt.dir/src/format.cc.obj _deps/fmt-build/CMakeFiles/fmt.dir/src/os.cc.obj
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = _deps\fmt-build\CMakeFiles\fmt.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = _deps\fmt-build\libfmtd.a
+  TARGET_PDB = fmtd.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/fmt-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\navia\Documents\GitHub\Nociones-Clave\cmake-build-debug\_deps\fmt-build && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build _deps/fmt-build/edit_cache: phony _deps/fmt-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/fmt-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\navia\Documents\GitHub\Nociones-Clave\cmake-build-debug\_deps\fmt-build && "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" --regenerate-during-build -SC:\Users\navia\Documents\GitHub\Nociones-Clave -BC:\Users\navia\Documents\GitHub\Nociones-Clave\cmake-build-debug"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/fmt-build/rebuild_cache: phony _deps/fmt-build/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
 # Target aliases.
 
 build Nociones_Clave: phony Nociones_Clave.exe
+
+build fmt: phony _deps/fmt-build/libfmtd.a
+
+build libfmtd.a: phony _deps/fmt-build/libfmtd.a
+
+build matematicas: phony libmatematicas.a
 
 # =============================================================================
 # Folder targets.
@@ -110,7 +258,14 @@ build Nociones_Clave: phony Nociones_Clave.exe
 #############################################
 # Folder: C:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug
 
-build all: phony Nociones_Clave.exe
+build all: phony Nociones_Clave.exe libmatematicas.a _deps/fmt-build/all
+
+# =============================================================================
+
+#############################################
+# Folder: C:/Users/navia/Documents/GitHub/Nociones-Clave/cmake-build-debug/_deps/fmt-build
+
+build _deps/fmt-build/all: phony _deps/fmt-build/libfmtd.a
 
 # =============================================================================
 # Built-in targets
@@ -119,14 +274,14 @@ build all: phony Nociones_Clave.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/navia/Documents/GitHub/Nociones-Clave/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseArguments.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/navia/Documents/GitHub/Nociones-Clave/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/navia/Documents/GitHub/Nociones-Clave/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake: phony
+build C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeParseArguments.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeRCInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckCXXSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/CheckSymbolExists.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/ExternalProject/shared_internal_commands.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent/CMakeLists.cmake.in C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindGit.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageMessage.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/GNUInstallDirs.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckCompilerFlag.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckFlagCommonConfig.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Internal/CheckSourceCompiles.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-C.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU-CXX.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-GNU.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-Initialize.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows-windres.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/Windows.cmake C$:/Program$ Files/JetBrains/CLion$ 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/Platform/WindowsPaths.cmake C$:/Users/navia/Documents/GitHub/Nociones-Clave/CMakeLists.txt CMakeCache.txt CMakeFiles/3.29.6/CMakeCCompiler.cmake CMakeFiles/3.29.6/CMakeCXXCompiler.cmake CMakeFiles/3.29.6/CMakeRCCompiler.cmake CMakeFiles/3.29.6/CMakeSystem.cmake _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake: phony
 
 
 #############################################
