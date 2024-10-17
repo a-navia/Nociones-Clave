@@ -1,4 +1,5 @@
-# Nociones-Clave
+# Nociones-Clave 
+Anamaria del Carmen Navia Moran
 libreris usadas:
 <iostream>
 <fmt/core.h>
